@@ -45,6 +45,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "",
+        "url": "https://github.com/lehuman/musico-language-support"
     }
 }

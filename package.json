@@ -1,0 +1,50 @@
+{
+    "name": "musico-language-support",
+    "icon": "icons/icon.png",
+    "displayName": "Musico Language Support",
+    "description": "language support for the custom Musico library language",
+    "version": "0.0.1",
+    "author": {
+        "name": "LeHuman"
+    },
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "musico",
+                "aliases": [
+                    "musico",
+                    "Musico"
+                ],
+                "extensions": [
+                    ".musico",
+                    ".Musico"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "musico",
+                "scopeName": "text.musico",
+                "path": "./syntaxes/musico.tmLanguage.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "musico-icon",
+                "label": "Musico",
+                "path": "./musico-icon-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "",
+    }
+}

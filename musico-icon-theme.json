@@ -1,0 +1,14 @@
+{
+    "iconDefinitions": {
+        "_musico_ico": {
+            "iconPath": "icons/icon.svg",
+        }
+    },
+    "fileExtensions": {
+        "musico": "_musico_ico",
+        "Musico": "_musico_ico",
+    },
+    "languageIds": {
+      "musico": "_musico_ico"
+    },
+}

@@ -1,0 +1,74 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Musico",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "comment.line.musico",
+					"match": "^[ \t\f]*?[#].*$"
+				},
+				{
+					"name": "keyword.control.musico",
+					"match": "\\[(Track|Song)\\]"
+				},
+				{
+					"name": "entity.name.section.musico",
+					"match": "\\b(file|id|vol|atk|atkMult|atkFd|sus|susMult|susFd|tHold|bpm|bpl)\\b"
+				},
+				{
+					"name": "entity.name.section.musico",
+					"match": "\\b(volume|attack|attackMultiplier|attackFade|sustain|sustainMultiplier|sustainFade|threshold)\\b"
+				},
+				{
+					"name": "constant.numeric.musico2",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "keyword.operator.new.musico",
+					"match": ":"
+				},
+				{
+					"name": "string.other.musico",
+					"match": "([^ :\t\n\f]+)+(?=[.](wav|mp3|ogg|oga|ogv))"
+				},
+				{
+					"name": "entity.name.type.musico",
+					"match": "[.](wav|mp3|ogg|oga|ogv)"
+				},
+				{
+					"name": "variable.parameter.musico",
+					"match": "\\[([ \t\n\f]*((-?[0-9]+)([.][0-9]+)*)[ \t\n\f]*,[ \t\n\f]*((-?[0-9]+)([.][0-9]+)*)[ \t\n\f]*)\\]"
+				},
+				{
+					"name": "variable.parameter.musico2",
+					"match": "\\{([ \t\n\f]*((-?[0-9]+)([.][0-9]+)*)[ \t\n\f]*,[ \t\n\f]*((-?[0-9]+)([.][0-9]+)*)[ \t\n\f]*)\\}"
+				},
+				{
+					"name": "constant.numeric.musico",
+					"match": "(-?[0-9]+)([.][0-9]+)*"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.musico",
+			"begin": "\"|'",
+			"end": "\"|'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.musico",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "text.musico"
+}
